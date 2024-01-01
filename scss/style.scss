@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: #131518;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Overpass', sans-serif;
+}
+.wrapper{
+   display: block;
+   width: 100%;
+   max-width: 412px;
+   border-radius: 30px;
+   background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%));
+   padding: 32px;
+   .star{
+      border-radius: 100%;
+      width: 48px;
+      height: 48px;
+      background-color: #262E38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   h1{
+      padding-top: 34px;
+      color: var(--pure-white, #FFF);
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Overpass;
+      font-size: 28px;
+   }
+   p{
+      padding-top: 7px;
+      color: var(--light-grey, #969FAD);
+      font-size: 15px;
+      line-height: 24px;
+   }
+   .price{
+      padding: 24px 0 32px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .ratings{
+         width: 51px;
+         height: 51px;
+         background-color: #262E38;
+         color: var(--medium-gray, #7C8798);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 100%;
+         transition: 0.5s;
+         &:hover{
+            background-color: orange;
+            color: white;
+         }
+      }
+   }
+   button{
+      width: 100%;
+      background-color: orange;
+      border: none;
+      padding: 11px 0;
+      color: white;
+      letter-spacing: 2px;
+      font-size: 15px;
+      border-radius: 22.5px;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover{
+         background-color: #FFF;
+         color: orange;
+      }
+   }
+}
+.thank__modal{
+   width: 100%;
+   max-width: 412px;
+   border-radius: 30px;
+   background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%));
+   padding: 32px;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   img{
+      padding-bottom: 32px;
+   }
+   .select{
+      background-color: #262E38;
+      padding: 4px 19px;
+      font-size: 15px;
+      color: orange;
+      border-radius: 22.5px;
+   }
+   h2{
+      text-transform: capitalize;
+      color: white;
+      padding:32px 0 7px 0;
+   }
+   .about{
+      color: var(--light-grey, #969FAD);
+      font-size: 15px;
+      line-height: 24px;
+   }
+}
